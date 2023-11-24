@@ -1,0 +1,63 @@
+{
+  "spins_count": 0,
+  "animals": [
+    {
+      "id": 0,
+      "name": "Lion",
+      "image_url": "https://rosspectr.ru/wp-content/uploads/5/8/d/58dd8d0afa31dd8de7f7949c6ce30405.jpeg",
+      "sector_id": 0,
+      "damage": 0,
+      "xp": 0
+    },
+    {
+      "id": 1,
+      "name": "Tiger",
+      "image_url": "https://www.fonstola.ru/images/202012/fonstola.ru_419624.jpg",
+      "sector_id": 1,
+      "damage": 0,
+      "xp": 0
+    },
+    {
+      "id": 2,
+      "name": "Cow",
+      "image_url": "https://klike.net/uploads/posts/2022-10/1665139749_5-45.jpg",
+      "sector_id": 2,
+      "damage": 0,
+      "xp": 0
+    },
+    {
+      "id": 3,
+      "name": "Sheep",
+      "image_url": "https://img5.goodfon.ru/wallpaper/nbig/1/c4/iagnenok-barashek-ovechka-ovtsa-malysh-priroda-pole-belyi-fo.jpg",
+      "sector_id": 3,
+      "damage": 0,
+      "xp": 0
+    }
+  ],
+  "sectors": [
+    {
+      "id": 0,
+      "X": 0,
+      "Y": 0,
+      "color": "blue"
+    },
+    {
+      "id": 1,
+      "X": 1,
+      "Y": 0,
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "X": 1,
+      "Y": 1,
+      "color": "yellow"
+    },
+    {
+      "id": 3,
+      "X": 0,
+      "Y": 1,
+      "color": "green"
+    }
+  ]
+}

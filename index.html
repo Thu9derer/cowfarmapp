@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Круг с 4 секторами</title>
+    <style>
+        canvas {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #000;
+            width: 400px;
+            height: 400px;
+        }
+
+        .sector {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+        }
+
+        .center-circle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #000;
+            left: calc(50% - 10px);
+            top: calc(50% - 10px);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="300"></canvas>
+<div class="sector sector1"></div>
+<div class="sector sector2"></div>
+<div class="sector sector3"></div>
+<div class="sector sector4"></div>
+<span class="center-circle"></span>
+
+<script src="circle.js"></script>
+</body>
+</html>
