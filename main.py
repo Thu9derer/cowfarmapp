@@ -14,7 +14,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):
     marcup = types.ReplyKeyboardMarkup()
-    marcup.add(types.KeyboardButton('Open web APP', web_app=WebAppInfo(url='https://thu9derer.github.io/tele_app/')))
+    marcup.add(types.KeyboardButton('Open web APP', web_app=WebAppInfo(url='https://thu9derer.github.io/cowfarmapp/')))
     await message.answer("Привет!", reply_markup=marcup)
 
 
