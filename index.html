@@ -33,13 +33,10 @@
             top: calc(50% - 10px);
             cursor: pointer;
         }
-        .ton {
-            position: absolute;
-        }
     </style>
 </head>
 <body>
-    <div class="ton" id="ton-connect"></div>
+    <div id="ton-connect" style='float: right;'></div>
     <script>
     const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
         manifestUrl: 'https://thu9derer.github.io/cowfarmapp/manifest.json',
