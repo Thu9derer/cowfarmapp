@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Круг с 4 секторами</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    
     <style>
         canvas {
             position: absolute;
@@ -33,6 +36,29 @@
     </style>
 </head>
 <body>
+    <h1 align="center">Telegram Wallet</h1>
+    <div id="ton-connect"></div>
+    <script>
+    const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+        manifestUrl: 'https://thu9derer.github.io/cowfarmapp/manifest.json',
+        buttonRootId: 'ton-connect'
+    });
+    </script>
+    <script>
+    async function connectToWallet() {
+        const connectedWallet = await tonConnectUI.connectWallet();
+        tonConnectUI.uiOptions = {
+            twaReturnUrl: 'https://t.me/TE_ST_PaY_Bot'
+        };
+        // Do something with connectedWallet if needed
+        console.log(connectedWallet);
+    }
+    
+    // Call the function
+    connectToWallet().catch(error => {
+        console.error("Error connecting to wallet:", error);
+    });
+    </script>
 <canvas id="myCanvas" width="300" height="300"></canvas>
 <div class="sector sector1"></div>
 <div class="sector sector2"></div>
